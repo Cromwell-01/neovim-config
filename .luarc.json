@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
+  
+  "Lua.runtime.version": "LuaJIT",
+  "Lua.runtime.path": [
+    "?.lua",
+    "?/init.lua"
+  ],
+
+  "Lua.workspace.checkThirdParty": false,
+  "Lua.workspace.library": [
+    "${3rd}/luv/library",          
+    "${3rd}/luassert/library",     
+    "/usr/local/share/nvim/runtime",
+    "/opt/homebrew/share/nvim/runtime",
+    "${HOME}/.local/share/nvim/lazy",
+    "${HOME}/.local/share/nvim/site/pack/packer/start"
+  ],
+
+  "Lua.workspace.ignoreDir": [
+    ".git",
+    "node_modules",
+    "dist"
+  ],
+
+  "Lua.diagnostics.globals": [
+    "vim"
+  ],
+
+  "Lua.format.enable": true,
+  "Lua.format.defaultConfig": {
+    "indent_style": "space",
+    "indent_size": "2"
+  },
+
+    "Lua.hint.enable": true
+
+}
